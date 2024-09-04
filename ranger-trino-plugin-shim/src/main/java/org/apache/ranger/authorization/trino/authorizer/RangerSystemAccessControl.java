@@ -682,6 +682,16 @@ public class RangerSystemAccessControl
     }
   }
 
+  @Override
+  public void checkCanShowCreateFunction(SystemSecurityContext context, CatalogSchemaRoutineName functionName) {
+    try {
+      activatePluginClassLoader();
+      systemAccessControlImpl.checkCanShowCreateFunction(context, functionName);
+    } finally {
+      deactivatePluginClassLoader();
+    }
+  }
+
   private void activatePluginClassLoader() {
     if (rangerPluginClassLoader != null) {
       rangerPluginClassLoader.activate();
