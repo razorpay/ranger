@@ -789,6 +789,15 @@ public class RangerSystemAccessControl
     }
   }
 
+  @Override
+  public void checkCanShowCreateFunction(SystemSecurityContext context, CatalogSchemaRoutineName functionName)
+  {
+    if (!hasPermission(createResource(functionName.getCatalogName(), functionName.getSchemaName()), context, TrinoAccessType.SHOW)) {
+      LOG.debug("RangerSystemAccessControl.checkCanShowFunctions(" + functionName.getSchemaName() + ") denied");
+      AccessDeniedException.denyShowCreateFunction(functionName.toString());
+    }
+  }
+
   /** HELPER FUNCTIONS **/
 
   private RangerTrinoAccessRequest createAccessRequest(RangerTrinoResource resource, SystemSecurityContext context, TrinoAccessType accessType) {
