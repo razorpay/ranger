@@ -187,6 +187,7 @@ public class RangerSystemAccessControl
             .orElse(Collections.emptyList());
   }
 
+  @Deprecated
   @Override
   public Optional<ViewExpression> getColumnMask(SystemSecurityContext context, CatalogSchemaTableName tableName, String columnName, Type type) {
     RangerTrinoAccessRequest request = createAccessRequest(
@@ -235,6 +236,10 @@ public class RangerSystemAccessControl
 
     return Optional.ofNullable(viewExpression);
   }
+
+//  @Override
+//  public Map<ColumnSchema, ViewExpression> getColumnMasks(SystemSecurityContext context, CatalogSchemaTableName tableName, List<ColumnSchema> columns) {
+//  }
 
   @Override
   public void checkCanCreateCatalog(SystemSecurityContext context, String catalog)
