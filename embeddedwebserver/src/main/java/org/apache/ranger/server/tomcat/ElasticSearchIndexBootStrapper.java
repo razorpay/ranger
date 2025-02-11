@@ -264,7 +264,7 @@ public class ElasticSearchIndexBootStrapper extends Thread {
 					}
 				} catch (Exception e) {
 					LOG.severe("Unable to create Index. Reason:" + e.toString());
-					e.printStackTrace();
+					
 				}
 			} else {
 				LOG.info("Index " + this.index + " is already created.");

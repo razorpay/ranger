@@ -157,7 +157,7 @@ public class TestRangerValidator {
 			RangerServiceDef serviceDef = mock(RangerServiceDef.class);
 			when(_store.getServiceDefByName("good-service")).thenReturn(serviceDef);
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 			Assert.fail("Unexpected exception during mocking!");
 		}
 		
@@ -224,7 +224,7 @@ public class TestRangerValidator {
 			RangerService service = mock(RangerService.class);
 			when(_store.getServiceByName("good-service")).thenReturn(service);
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 			Assert.fail("Unexpected exception during mocking!");
 		}
 		

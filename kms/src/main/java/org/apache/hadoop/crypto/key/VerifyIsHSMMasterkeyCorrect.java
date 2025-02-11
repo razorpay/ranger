@@ -47,7 +47,7 @@ public class VerifyIsHSMMasterkeyCorrect {
                         }
                         new VerifyIsHSMMasterkeyCorrect().getHSMMasterkey(hsmType, partitionName);
                 } catch (Exception e) {
-                        e.printStackTrace();
+                        
                 }
         }
 

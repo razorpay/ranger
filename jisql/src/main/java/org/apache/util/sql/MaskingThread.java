@@ -46,7 +46,7 @@ public class MaskingThread extends Thread
             }
             catch (InterruptedException iex)
             {
-                iex.printStackTrace();
+                
             }
             if (!stop)
             {
