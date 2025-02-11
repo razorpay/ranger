@@ -254,11 +254,11 @@ public class XGroupUserService extends
 				
 			}
 		} catch (IllegalArgumentException e) {
-			e.printStackTrace();
+			
 		} catch (IllegalAccessException e) {
-			e.printStackTrace();
+			
 		} catch (SecurityException e) {
-			e.printStackTrace();
+			
 		}
 		
 		return trxLogList;

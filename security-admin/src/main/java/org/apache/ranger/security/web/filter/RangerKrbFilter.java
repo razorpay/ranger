@@ -450,7 +450,7 @@ public class RangerKrbFilter implements Filter {
         token = getToken(httpRequest);
       }
       catch (AuthenticationException ex) {
-    	ex.printStackTrace();
+    	
         LOG.warn("AuthenticationToken ignored: " + ex.getMessage());
         // will be sent back in a 401 unless filter authenticates
         authenticationEx = ex;
@@ -504,7 +504,7 @@ public class RangerKrbFilter implements Filter {
       }
     } catch (AuthenticationException ex) {
       // exception from the filter itself is fatal
-      ex.printStackTrace();
+      
       errCode = HttpServletResponse.SC_FORBIDDEN;
       authenticationEx = ex;
       LOG.warn("Authentication exception: " + ex.getMessage(), ex);

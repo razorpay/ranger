@@ -102,7 +102,7 @@ public class TestEvents {
             provider.stop();
         } catch(Exception excp) {
             LOG.info(excp.getLocalizedMessage());
-            excp.printStackTrace();
+            
         }
 
         LOG.info("<== TestEvents.main()");

@@ -3853,7 +3853,7 @@ public class ServiceREST {
 					} catch (Throwable e) {
 						//log and proceed
 						LOG.warn("Skipping deletion of service with ID="+serviceId);
-						e.printStackTrace();
+						
 						deleteResponse.setIsDeleted(Boolean.FALSE);
 						deleteResponse.setErrorMsg(e.getMessage());
 					}

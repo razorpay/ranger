@@ -2481,7 +2481,7 @@ public class ServiceDBStore extends AbstractServiceStore {
 			IOUtils.write(sb.toString(), out, "UTF-8");
 		} catch (Exception e) {
 			LOG.error("Error while generating report file " + CSVFileName, e);
-			e.printStackTrace();
+			
 		} finally {
 			try {
 				if (out != null) {

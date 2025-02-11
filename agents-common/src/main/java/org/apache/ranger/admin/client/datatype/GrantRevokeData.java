@@ -150,7 +150,7 @@ public class GrantRevokeData implements java.io.Serializable {
 		try {
 			return JsonUtilsV2.objToJson(this);
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 		}
 		
 		return "";
@@ -226,7 +226,7 @@ public class GrantRevokeData implements java.io.Serializable {
 			try {
 				return JsonUtilsV2.objToJson(this);
 			} catch (Exception e) {
-				e.printStackTrace();
+				
 			}
 			
 			return "";

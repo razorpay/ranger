@@ -114,7 +114,7 @@ public class PatchAtlasForClassificationResource_J10047 extends BaseLoader {
             addResourceClassificationsInServiceDef();
             createAdditionalPolicyWithClassificationForExistingEntityClassificationPolicy();
         } catch (Exception e) {
-            e.printStackTrace();
+            
             throw new RuntimeException("Error while updating " + EMBEDDED_SERVICEDEF_ATLAS_NAME + " service-def");
         }
         logger.info("<== PatchAtlasForClassificationResource_J10047.execLoad()");

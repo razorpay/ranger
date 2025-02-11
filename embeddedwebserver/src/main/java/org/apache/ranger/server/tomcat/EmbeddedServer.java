@@ -271,7 +271,7 @@ public class EmbeddedServer {
 					+ "] = path [" + webapp_dir + "].");
 		} catch (LifecycleException lce) {
 			LOG.severe("Tomcat Server failed to start webapp:" + lce.toString());
-			lce.printStackTrace();
+			
 		}
 
 		if (servername.equalsIgnoreCase(ADMIN_SERVER_NAME)) {
@@ -304,7 +304,7 @@ public class EmbeddedServer {
 					});
 				} catch (Exception e) {
 					LOG.severe("Tomcat Server failed to start:" + e.toString());
-					e.printStackTrace();
+					
 				}
 			} else {
 				startServer(server);
@@ -347,10 +347,10 @@ public class EmbeddedServer {
 			shutdownServer();
 		} catch (LifecycleException e) {
 			LOG.severe("Tomcat Server failed to start:" + e.toString());
-			e.printStackTrace();
+			
 		} catch (Exception e) {
 			LOG.severe("Tomcat Server failed to start:" + e.toString());
-			e.printStackTrace();
+			
 		}
 	}
 

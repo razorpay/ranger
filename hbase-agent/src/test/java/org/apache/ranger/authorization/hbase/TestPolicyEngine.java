@@ -122,7 +122,7 @@ public class TestPolicyEngine {
 			}
 
 		} catch(Throwable excp) {
-			excp.printStackTrace();
+			
 		}
 		
 	}

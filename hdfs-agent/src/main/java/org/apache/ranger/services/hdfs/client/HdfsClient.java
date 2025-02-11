@@ -186,7 +186,7 @@ public class HdfsClient extends BaseClient {
 		try {
 			fsList = fs.listFiles(baseDir, fileNameToMatch,null);
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 		}
 		if (fsList != null && fsList.size() > 0) {
 			for(String s : fsList) {

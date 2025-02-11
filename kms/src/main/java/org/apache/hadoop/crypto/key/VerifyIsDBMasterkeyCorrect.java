@@ -47,7 +47,7 @@ public class VerifyIsDBMasterkeyCorrect {
                         }
                         new VerifyIsDBMasterkeyCorrect().verifyMasterkey(password);
                 } catch (Exception e) {
-                        e.printStackTrace();
+                        
                 }
         }
 
