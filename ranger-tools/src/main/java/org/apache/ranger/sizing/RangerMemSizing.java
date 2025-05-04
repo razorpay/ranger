@@ -344,7 +344,7 @@ public class RangerMemSizing {
       new HelpFormatter().printHelp("RangerMemSizing", options);
     } catch (ParseException excp) {
       System.out.println("Failed to parse arguments");
-      excp.printStackTrace(System.out);
+      
     }
 
     return null;
@@ -369,7 +369,7 @@ public class RangerMemSizing {
   private void log(String msg, Throwable excp) {
     out.println(DATE_FORMAT.format(new Date()) + ": " +msg);
 
-    excp.printStackTrace(out);
+    
   }
 
   private RangerPolicyEngineOptions getPolicyEngineOptions() {

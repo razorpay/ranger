@@ -79,7 +79,7 @@ public class XmlConfigChanger {
 		catch(Throwable t) {
 			System.err.println("*************************************************************************");
 			System.err.println("******* ERROR: unable to process xml configuration changes due to error:" + t.getMessage());
-			t.printStackTrace();
+			
 			System.err.println("*************************************************************************");
 			System.exit(1);
 		}
@@ -436,7 +436,7 @@ public class XmlConfigChanger {
 				installProperties.load(in);
 			} catch (IOException ioe) {
 				System.err.println("******* ERROR: load file failure. The reason: " + ioe.getMessage());
-				ioe.printStackTrace();
+				
 			}
 		}
 		// To support environment variable, we will add all environment variables to the Properties
