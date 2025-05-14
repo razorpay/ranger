@@ -306,14 +306,14 @@ public class RangerSystemAccessControl
     }
   }
 
-  @Deprecated
-  @Override
-  public void checkCanSetSystemSessionProperty(Identity identity, String propertyName) {
-    if (!hasPermission(createSystemPropertyResource(propertyName), identity, TrinoAccessType.ALTER)) {
-      LOG.debug("RangerSystemAccessControl.checkCanSetSystemSessionProperty denied");
-      AccessDeniedException.denySetSystemSessionProperty(propertyName);
-    }
-  }
+//  @Deprecated
+//  @Override
+//  public void checkCanSetSystemSessionProperty(Identity identity, String propertyName) {
+//    if (!hasPermission(createSystemPropertyResource(propertyName), identity, TrinoAccessType.ALTER)) {
+//      LOG.debug("RangerSystemAccessControl.checkCanSetSystemSessionProperty denied");
+//      AccessDeniedException.denySetSystemSessionProperty(propertyName);
+//    }
+//  }
 
   @Override
   public void checkCanImpersonateUser(Identity identity, String userName) {
@@ -701,11 +701,11 @@ public class RangerSystemAccessControl
     LOG.debug("RangerSystemAccessControl.checkCanExecuteQuery(" + identity + ") invoked");
   }
 
-  @Deprecated
-  @Override
-  public void checkCanExecuteQuery(Identity identity) {
-    LOG.debug("RangerSystemAccessControl.checkCanExecuteQuery(" + identity + ") invoked");
-  }
+//  @Deprecated
+//  @Override
+//  public void checkCanExecuteQuery(Identity identity) {
+//    LOG.debug("RangerSystemAccessControl.checkCanExecuteQuery(" + identity + ") invoked");
+//  }
 
   @Override
   public void checkCanViewQueryOwnedBy(Identity identity, Identity queryOwner) {
