@@ -102,7 +102,7 @@ public class XXModuleDefDao extends BaseDao<XXModuleDef>{
 					.getResultList();
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 			return null;
 		}
 	}

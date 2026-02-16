@@ -37,7 +37,7 @@ public class UserSyncMetricsProducer implements Runnable {
 		userSyncMetrics.run();
 		/*
 		 * try { userSyncMetrics.writeJVMMetrics(); } catch (Throwable e) { // TODO
-		 * Auto-generated catch block e.printStackTrace(); }
+		 * Auto-generated catch block  }
 		 */
 	}
 

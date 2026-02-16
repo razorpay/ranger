@@ -122,7 +122,7 @@ public class ChangeUserNameUtil extends BaseLoader {
                     System.exit(1);
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                
             }
         }
         else{

@@ -77,7 +77,7 @@ public class ResourceTests extends TestCase {
             assertEquals("Resource element field value does not match", Collections.singletonList("channel"), resource.getResourceElements().get("field").getValues());
             assertEquals("serviceName does not match expected value", "null_nestedstructure", resource.getServiceName());
         } catch(Exception e) {
-            e.printStackTrace();
+            
             fail("An error occurred while processing resource");
         }
 
@@ -95,7 +95,7 @@ public class ResourceTests extends TestCase {
             assertEquals("Resource element field value does not match", Collections.singletonList("channel"), resource.getResourceElements().get("field").getValues());
             assertEquals("serviceName does not match expected value", "dev_nestedstructure", resource.getServiceName());
         } catch(Exception e) {
-            e.printStackTrace();
+            
             fail("An error occurred while processing resource");
         }
     }
@@ -116,7 +116,7 @@ public class ResourceTests extends TestCase {
             assertEquals("Resource element schema value does not match", Collections.singletonList("json_object.foo.v1"), resource.getResourceElements().get("schema").getValues());
             assertEquals("serviceName does not match expected value", "null_nestedstructure", resource.getServiceName());
         } catch (Exception e) {
-            e.printStackTrace();
+            
             fail("An error occurred while processing resource");
         }
 
@@ -132,7 +132,7 @@ public class ResourceTests extends TestCase {
             assertEquals("Resource element schema value does not match", Collections.singletonList("json_object.foo.v1"), resource.getResourceElements().get("schema").getValues());
             assertEquals("serviceName does not match expected value", "dev_nestedstructure", resource.getServiceName());
         } catch (Exception e) {
-            e.printStackTrace();
+            
             fail("An error occurred while processing resource");
         }
     }

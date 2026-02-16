@@ -222,7 +222,7 @@ public class KMSWebApp implements ServletContextListener {
       System.out.println();
       System.out.println("Stacktrace:");
       System.out.println("---------------------------------------------------");
-      ex.printStackTrace(System.out);
+      
       System.out.println("---------------------------------------------------");
       System.out.println();
       System.exit(1);

@@ -86,7 +86,7 @@ public class CredentialReader {
 				  }
 			  }
 		  }catch(Exception ex){
-			  ex.printStackTrace();
+			  
 			  credential=null;
 		  }
 		  return credential;

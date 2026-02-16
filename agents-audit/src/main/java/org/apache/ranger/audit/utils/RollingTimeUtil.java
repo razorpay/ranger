@@ -260,7 +260,7 @@ public class RollingTimeUtil {
 			nextRollOvertime = rollingTimeUtil.computeNextRollingTime(rollOverPeriod);
 			System.out.println(nextRollOvertime);
 		} catch (Exception e1) {
-			e1.printStackTrace();
+			
 		}
 		long rollOverTime = rollingTimeUtil.computeNextRollingTime(duration, null);
 		nextRollOvertime = new Date(rollOverTime);

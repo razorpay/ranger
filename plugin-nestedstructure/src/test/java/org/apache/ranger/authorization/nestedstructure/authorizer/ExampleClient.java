@@ -40,7 +40,7 @@ public class ExampleClient {
         System.out.println("hasAccess: "+ result.hasAccess());
         System.out.println("authorizedJson: "+ result.getJson());
 
-        result.getErrors().stream().forEach(e-> e.printStackTrace());
+        result.getErrors().stream().forEach(e-> 
 
         System.out.println("done");
     }

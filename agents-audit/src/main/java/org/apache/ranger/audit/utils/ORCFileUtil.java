@@ -428,7 +428,7 @@ public class ORCFileUtil {
             auditOrcFileUtil.log(write, events);
             write.close();
         } catch (Exception e){
-            e.printStackTrace();
+            
         }
     }
 

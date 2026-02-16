@@ -78,7 +78,7 @@ public class RangerCredentialProviderTest {
 				System.out.println("Keystore File is NULL");
 			}
 		} catch(Throwable t) {
-			t.printStackTrace();
+			
 		}
 		
 		Configuration conf = new Configuration();
@@ -170,7 +170,7 @@ public class RangerCredentialProviderTest {
 			}
 		} catch (Throwable e) {
 			System.out.println("Unable to find the value of [" + fieldName + "] field in the Class [" + cs.getClass().getName() + "]. Skiping -f option");
-			e.printStackTrace();
+			
 			ret = false;
 		}
 		

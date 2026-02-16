@@ -260,7 +260,7 @@ public class Jisql {
             jisql.parseArgs(argv);
         }
         catch (Throwable t) {
-            t.printStackTrace();
+            
             jisql.usage();
             System.exit(1);
         }
@@ -269,7 +269,7 @@ public class Jisql {
             jisql.run();
         }
         catch (Exception e) {
-            e.printStackTrace();
+            
             System.exit(1);
         }
 
@@ -326,12 +326,12 @@ public class Jisql {
         catch (InstantiationException ie) {
         	isExit=true;
             System.err.println("Cannot instantiate the driver class \"" + driverName + "\"");
-            ie.printStackTrace(System.err);
+            
         }
         catch (IllegalAccessException iae) {
         	isExit=true;
             System.err.println("Cannot instantiate the driver class \"" + driverName + "\" because of an IllegalAccessException");
-            iae.printStackTrace(System.err);
+            
         }
         finally {
             if (connection != null) {
@@ -370,7 +370,7 @@ public class Jisql {
             }
             catch (FileNotFoundException fnfe) {
             	System.err.println("Unable to open file \"" + inputFileName + "\"");
-                fnfe.printStackTrace(System.err);
+                
                 throw fnfe;
             }
         }
@@ -514,7 +514,7 @@ public class Jisql {
                 throw sqle;
             }
             catch (Exception e) {
-                e.printStackTrace(System.err);
+                
             }
 
             if (inputQuery != null)

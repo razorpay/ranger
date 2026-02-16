@@ -38,7 +38,7 @@ public class TestChildFistClassLoader {
 		    URL url = file.toPath().toUri().toURL();		
 		    urls = new URL[] {url};
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 		}
 		
 		String[] libdirs = new String[] { file.getAbsolutePath() };
@@ -49,7 +49,7 @@ public class TestChildFistClassLoader {
 			TestPlugin testPlugin = (TestPlugin) rangerPluginClassLoader.loadClass("org.apache.ranger.plugin.classloader.test.Impl.TestPluginImpl").newInstance();
 			System.out.println(testPlugin.print());
 		} catch (Throwable t) {
-			t.printStackTrace();
+			
 		}
 	}
 }

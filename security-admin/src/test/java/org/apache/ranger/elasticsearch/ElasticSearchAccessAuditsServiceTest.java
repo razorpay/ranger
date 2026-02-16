@@ -68,7 +68,7 @@ public class ElasticSearchAccessAuditsServiceTest {
             try {
                 LOGGER.warn(writer.writeValueAsString(x));
             } catch (JsonProcessingException e) {
-                e.printStackTrace();
+                
             }
         });
     }

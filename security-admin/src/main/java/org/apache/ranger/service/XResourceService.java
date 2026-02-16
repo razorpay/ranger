@@ -579,13 +579,13 @@ public class XResourceService extends
 			}
 				
 		} catch (IllegalArgumentException e) {
-			e.printStackTrace();
+			
 		} catch (IllegalAccessException e) {
-			e.printStackTrace();
+			
 		} catch (NoSuchFieldException e) {
-			e.printStackTrace();
+			
 		} catch (SecurityException e) {
-			e.printStackTrace();
+			
 		}
 		
 		if(trxLogList.isEmpty()){

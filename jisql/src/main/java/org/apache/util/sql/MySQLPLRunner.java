@@ -209,12 +209,12 @@ public class MySQLPLRunner {
                         rs.close();
                     	}
                     } catch (Exception e) {
-                        e.printStackTrace();
+                        
                     }
                     try {
                         statement.close();
                     } catch (Exception e) {
-                        e.printStackTrace();
+                        
                         // Ignore to workaround a bug in Jakarta DBCP
                     }
                     Thread.yield();
@@ -324,20 +324,20 @@ public class MySQLPLRunner {
     	
     	  }
           catch (SQLException sqle) {
-        	  sqle.printStackTrace();
+        	  
           }
           catch (ClassNotFoundException cnfe) {
               System.err.println("Cannot find the driver class \"" + driverName + "\" in the current classpath.");
           }
           catch (InstantiationException ie) {
               System.err.println("Cannot instantiate the driver class \"" + driverName + "\"");
-              ie.printStackTrace(System.err);
+              
           }
           catch (IllegalAccessException iae) {
               System.err.println("Cannot instantiate the driver class \"" + driverName + "\" because of an IllegalAccessException");
-              iae.printStackTrace(System.err);
+              
           }catch (Exception sqle) {
-        	  sqle.printStackTrace();
+        	  
           }
           finally {
               if (con != null) {
